@@ -1,0 +1,614 @@
+@import "../bootstrap-4.5.0/scss/_functions.scss";
+@import "../bootstrap-4.5.0/scss/_variables.scss";
+@import "../bootstrap-4.5.0/scss/mixins/_breakpoints.scss";
+
+$brown-bright: #DBCFBF;
+$green-bright: #CECDAE;
+$white-bg: #F9F5EC;
+$black-font: #262626;
+$red-orange: #AB6B4F;
+$green: #777657;
+$space: 100px;
+
+@font-face{
+    font-family: butler-ultra-light;
+    src: url("../fonts/Butler_Ultra_Light.otf");
+}
+@font-face{
+    font-family: butler-light;
+    src: url("../fonts/Butler_Light.otf");
+}
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
+    color: $black-font;
+    h1{
+        font-family: 'butler-ultra-light', 'Times New Roman', Times, serif;
+    }
+    h2, h3{
+        font-family: 'butler-light';
+    }
+    .btn-box{
+        display: inline-block;
+        margin-bottom: 1rem;
+        box-shadow: unset;
+        transition: all 0.2s;
+        &:hover, :active{
+            box-shadow: 5px 5px 10px $black-font;
+        }
+        .massage-btn{
+            border: $red-orange 3px solid;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            &:hover, :active{
+                background-color: $red-orange;
+                color: $white-bg;
+                box-shadow: 5px 5px 10px $black-font;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }    
+
+    /* HEADER */
+    header{
+        background-color: $green;
+        &#header-bg{
+            height: 100vh;
+            background-image: url("../media/Titelbild.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .center-flex{
+            img{
+                width: 10%;
+            }
+            display: flex;
+            height: 90vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: $white-bg;
+            h1{
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+            .massage-btn{
+                color: $white-bg;
+            }
+        }
+    }
+    nav{
+        background:transparent;
+        min-height: 10vh;
+        @include media-breakpoint-down(md){
+            min-height: 15vh;
+        }
+        @include media-breakpoint-down(sm){
+            min-height: 10vh;
+        }
+        .navbar-toggler:focus{
+            box-shadow: none;
+        }
+        .menu-icon{
+            height: 5vh;
+            width: auto;
+            @include media-breakpoint-down(md){
+                height: 8vh;
+            }
+            @include media-breakpoint-down(sm){
+                height: 6vh;
+            }
+        }
+        ul{
+            margin-left: auto;
+            font-family: 'butler-light', 'Times New Roman', Times, serif;
+            @include media-breakpoint-down(md){
+                text-align: center;
+            }
+            li{
+                padding: 0;
+                margin-left: 2rem;
+                a{
+                    color: $black-font;
+                }
+                &:last-child{
+                    border: $red-orange 3px solid;
+                    border-radius: 3px;
+                }
+            }                
+        }
+    }
+    .center-section{
+        padding-top: 200px;
+        background-color: $white-bg;
+        text-align: center;
+        h2{
+            margin-bottom:2rem ;
+        }
+        p{
+            margin: 1rem auto;
+            width: 60%;
+            @include media-breakpoint-down(sm){
+                width: 90%;
+            }
+        }
+    }
+    .split-section{
+        position: relative;
+        background-color: $brown-bright;
+        #space{
+            background-color: $white-bg;
+            height: 200px;
+            width: 100%;
+        }
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+            .content{
+                padding: $space 3rem $space 6rem;
+                @include media-breakpoint-down(sm){
+                    padding: $space 0;
+                    margin: auto;
+                    width: 90%;
+                    text-align: center;
+                }
+                @include media-breakpoint-down(md){
+                    padding: $space 3rem;
+                }
+                h2{
+                    margin-bottom: 2rem;
+                }
+                p{
+                    margin-bottom: 3rem;
+                }
+                img{
+                    position: absolute;
+                    top: 170px;
+                    right: 48%;
+                    background-image: url("../media/Sonne_Icon.png");
+                    width: 110px;
+                    height: 110px;
+                    z-index: 3;
+
+                }
+            }
+            .contain{
+                background-image: url("../media/Lomi2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    #service{
+        padding-bottom: $space;
+        .card{
+            background-color: transparent;
+            border: none;
+            margin-bottom: 3rem;
+            .card-img-top{
+                padding: 0 20%;
+            }
+            h3{
+                color: $red-orange;
+            }
+            p{
+                font-size: 1.2em;
+                width: 62%;
+                @include media-breakpoint-down(lg){
+                    font-size: 1em;
+                    width: 75%
+                }
+                @include media-breakpoint-down(md){
+                    width: 86%;
+                    font-size: 0.8em;
+                }
+            }
+        }
+        a{
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            @include media-breakpoint-down(md){
+                width: fit-content;
+            }
+            button{
+                width: 100%;
+                @include media-breakpoint-down(md){
+                    width: inherit;
+                }
+            }
+        }
+    }
+    #about-henriette{
+        text-align: right;
+        background-color: $green-bright;
+        .content{
+            padding: 200px 6rem 200px 3rem;
+            @include media-breakpoint-down(lg){
+                padding: 50px 3rem;
+            }
+            @include media-breakpoint-down(md){
+                padding: 1.5rem 3rem;
+            }
+            @include media-breakpoint-down(sm){
+                padding: $space 0;
+                margin: auto;
+                width: 90%;
+                text-align: center;
+            }
+            
+            p{
+                font-family: 'butler-light';
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+                @include media-breakpoint-down(lg){
+                    font-size: 1.2em;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 1em;
+                }
+            }
+            h3{
+                font-family: 'Montserrat';
+                color: $black-font;
+                font-size: 1rem;
+                margin-bottom: 3rem;
+                @include media-breakpoint-down(lg){
+                    font-size: 1em;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 0.8em;
+                }
+            }    
+        }
+        .contain{
+            background-image: url("../media/Henriette.jpg");
+            background-position: right;
+        }
+        
+        button{
+            margin-left: auto;
+        }
+    }
+    .offers{
+        padding: 50px 0 $space;
+        background-color: $green;
+        overflow: hidden;
+
+        h1{
+            font-family: 'Montserrat';
+            font-size: 1rem;
+            color: $white-bg;
+            text-align: center;
+            margin-bottom: 3rem;
+            div{
+                font-family: 'butler-ultra-light';
+                font-size: 3.5rem;
+            }
+        }
+        .offer{
+            margin: 0 0.75rem 3rem;
+            padding: 3rem 2rem;
+            //max-width: 546px;
+            background-color: $white-bg;
+            text-align: right;
+            color: $green;
+            box-shadow: 0 0 10px $black-font;
+            @include media-breakpoint-down(md){
+                padding: 2rem;
+            }
+            .offer-top{                
+                margin: 0 0 1rem;
+                padding: 0;
+                align-items: center;
+                .offer-img{
+                    margin: 0;
+                    padding: 0;
+                    img{
+                        width: 100%;
+                        height: auto;    
+                    }                    
+                }
+                .offer-detail{
+                    margin: 0;
+                    padding: 0;
+                    h2{
+                        font-family: 'butler-ultra-light';
+                        font-size: 4.3rem;
+                        span{
+                            font-family: 'butler-light';
+                        }
+                        @include media-breakpoint-down(lg){
+                            font-size: 3.5rem;
+                        }
+                        @include media-breakpoint-down(md){
+                            font-size: 3rem;
+
+                        }
+                        @include media-breakpoint-down(sm){
+                            font-size: 3.3rem;
+                        }
+                    }
+                    h3{
+                        font-size: 1.5rem;
+                        font-family: 'Montserrat';
+                        @include media-breakpoint-down(lg){
+                            font-size: 1.1rem;
+                        }                        
+                        @include media-breakpoint-down(md){
+                            font-size: .85rem;
+                        }
+                    }
+                    p{
+                        font-style: italic;
+                        font-weight: 300;
+                        margin-bottom: 0;
+                        font-size: 1.1rem;
+                        @include media-breakpoint-down(lg){
+                            font-size: .9rem;
+                        }                        
+                        @include media-breakpoint-down(md){
+                            font-size: .65rem;
+                        }
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .offer-bottom{
+                margin: 0;
+                padding: 0;
+                border-top: 1px solid $green;
+                align-items: center;
+                overflow: visible;
+                @include media-breakpoint-down(md){
+                    align-items: unset;
+                }
+                .offer-btn{
+                    margin: 0;
+                    padding: 0 .5rem;
+                    overflow: visible;
+                    a{
+                        margin: .8rem 0 0;
+                        width: 100%;
+                        @include media-breakpoint-down(md){
+                            margin-top: .5rem;
+                        }
+                        .massage-btn{
+                            width: 100%;
+                            background-color: $red-orange;
+                            color: $white-bg;
+                            &:hover, &:active{
+                                background-color: $white-bg;
+                                color: $black-font;
+                            }
+                            /* @include media-breakpoint-down(lg){
+                                font-size: 3.5rem;
+                            } */
+                            @include media-breakpoint-down(md){
+                                font-size: .7rem;
+                                padding: .1rem 0rem;
+                            }
+                        }
+                    }
+                }
+                .dur{
+                    padding: 0;
+                    border-left: 1px $green solid;                   
+                }
+                p{
+                    margin: 0;
+                    font-size: 3rem;
+                    font-family: 'butler-light';
+                    @include media-breakpoint-down(lg){
+                        font-size: 2.3rem;
+                    }
+                    @include media-breakpoint-down(md){
+                        font-size: 1.55rem;
+                    }
+                }
+            }            
+        }
+        #for-questions{
+            //padding-bottom: 2.5rem;
+            text-align: center;
+            font-family: 'butler-ultra-light';
+            font-size: 2rem;
+            color: $white-bg;
+            overflow: hidden;
+            align-self: end;
+            @include media-breakpoint-down(lg){
+                font-size: 1.8rem;
+            }          
+            @include media-breakpoint-down(md){
+                font-size: 1.2rem;
+            }
+            p:first-of-type{
+                margin: 0;
+            }        
+            p:last-of-type{
+                margin-top: 2rem;
+                font-size: 2.1rem;
+                font-family: 'butler-light';
+                @include media-breakpoint-down(lg){
+                    font-size: 1.9rem;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 1.3rem;
+                }
+            }
+            .btn-box{
+                margin-bottom: 2.5rem;
+                height: fit-content;
+                transform: translateY(7px);
+                width: 30%;
+                font-size: 1rem;
+                @include media-breakpoint-down(md){
+                    transform: translateY(0px);
+                    width: 50%;
+                }
+                button{
+                    width: 100%;                    
+                    font-family: 'Montserrat';
+                    //font-size: 1.5rem;
+                    background-color: $white-bg;
+                    border: none;
+                    &:hover, &:active{
+                        background-color: $red-orange;
+                        color: $white-bg;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        position: relative;
+        background-color: $brown-bright;
+        height: fit-content;
+        .icon-container{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: .8rem;
+            .navbar-brand{
+                position: relative;
+                z-index: 99;
+                .menu-icon{
+                    height: 5vh;
+                    width: auto;
+                    @include media-breakpoint-down(md){
+                        height: 8vh;
+                    }
+                    @include media-breakpoint-down(sm){
+                        height: 6vh;
+                    }
+                }
+            }    
+        }
+        .content{
+            nav{
+                @include media-breakpoint-down(md){
+                    justify-content: end;
+                }
+                .navbar-nav{
+                    justify-content: space-between;
+                    width: 100%;
+                    @include media-breakpoint-down(md){
+                        margin-top: 1.5rem;
+                    }
+                    li{
+                        margin-left: 0;
+                        padding: .5rem 0;
+                        &:last-child{
+                            padding: .5rem 1rem;
+                        }
+                        a{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+             padding: 0;
+           /* @include media-breakpoint-down(lg){
+                padding: 50px 3rem;
+            }
+            @include media-breakpoint-down(md){
+                padding: 1.5rem 3rem;
+            }
+            @include media-breakpoint-down(sm){
+                padding: $space 0;
+                margin: auto;
+                width: 90%;
+                text-align: center;
+            } */
+            
+            p{
+                span{
+                    display: block;
+                }
+                font-size: 1.2rem;
+                @include media-breakpoint-down(lg){
+                    font-size: 1em;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 1em;
+                }
+            }
+            h3{
+                //font-family: 'Montserrat';
+                font-size: 3rem;
+                @include media-breakpoint-down(lg){
+                    font-size: 1em;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 0.8em;
+                }
+            }   
+            form{
+                input, textarea{
+                    &::placeholder{
+                        font-style: italic;
+                    }
+                    width: 100%;
+                    background-color: inherit;
+                    margin-bottom: 1rem;
+                    border-color: $black-font;
+                }
+            } 
+        }
+        .contain{
+            background-image: url("../media/Henriette.jpg");
+            background-position: right;
+        }
+    }
+    footer{
+        padding: 50px 0;
+        background-color: $green;
+        img{
+            padding: 6rem;
+             @include media-breakpoint-down(md){
+                 padding: 0 1rem;
+             }
+        }
+        .footing{
+            align-items: center;
+        }
+        .footer-content{
+            font-size: 100%;
+            padding: 2rem;
+            padding-left: 5rem;
+            border-left: 1px solid $green-bright;
+            @include media-breakpoint-down(md){
+                border: none;
+                font-size: 95%;
+            }
+            a{
+                display: block;
+            }
+            .internal-links{
+                display: block;
+                color: $green-bright;
+                text-decoration: unset;
+                font-weight: 900;
+                margin-bottom: 1rem;
+            }
+            .contact-details{
+                color: $green-bright;
+                text-decoration: unset;
+                margin: 0;
+            }
+            
+        }
+    }
+}
