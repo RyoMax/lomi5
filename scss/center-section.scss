@@ -1,0 +1,16 @@
+.center-section{
+    padding-top: 200px;
+    background-color: $white-bg;
+    text-align: center;
+    h2{
+        margin-bottom:2rem ;
+    }
+    p{
+        margin: 0 auto;
+        padding: 1rem;
+        width: 60%;
+        @include media-breakpoint-down(sm){
+            width: 90%;
+        }
+    }
+}

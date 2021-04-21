@@ -1,0 +1,93 @@
+#contact{
+    position: relative;
+    background-color: $brown-bright;
+    height: fit-content;
+    .icon-container{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: .8rem;
+        .navbar-brand{
+            position: relative;
+            z-index: 99;
+            .menu-icon{
+                height: 5vh;
+                width: auto;
+                @include media-breakpoint-down(md){
+                    height: 8vh;
+                }
+                @include media-breakpoint-down(sm){
+                    height: 6vh;
+                }
+            }
+        }    
+    }
+    .content{
+         /* padding: 0rem; */
+       /* @include media-breakpoint-down(lg){
+            padding: 50px 3rem;
+        }
+        @include media-breakpoint-down(md){
+            padding: 1.5rem 3rem;
+        }*/
+        @include media-breakpoint-down(sm){
+            padding: $space 0;
+            margin: auto;
+            width: 90%;
+            text-align: center;
+        } 
+        
+        p{
+            span{
+                display: block;
+            }
+            font-size: 1.2rem;
+            @include media-breakpoint-down(lg){
+                font-size: 1em;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 1em;
+            }
+        }
+        h3{
+            font-size: 3rem;
+            @include media-breakpoint-down(lg){
+                font-size: 1em;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 0.8em;
+            }
+        }   
+        form{
+            
+            input:not(input[type="submit"]), textarea{
+                &::placeholder{
+                    font-style: italic;
+                }
+                width: 100%;
+                height: 2rem;
+                border: 2px solid black;
+                background-color: inherit;
+                margin-bottom: 1rem;
+                border-color: $black-font;
+                &:focus{
+                    border: 2px solid $red;
+                    outline: none;
+                    box-shadow: 0 0 5px $red-orange;
+                }
+            }
+            textarea{
+                resize: none;
+                height: 12rem;
+            }
+            .btn-box{
+                margin-left: auto;
+            }
+
+        } 
+    }
+    .contain{
+        background-image: url("../media/Henriette.jpg");
+        background-position: right;
+    }
+}

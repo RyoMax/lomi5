@@ -1,0 +1,37 @@
+header{
+    background-color: $green;
+    &#header-bg{
+        height: 90vh;
+        background-image: url("../media/Titelbild.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media-breakpoint-up(xs){
+            height: 85vh;
+        }
+        @include media-breakpoint-up(sm){
+            height: 90vh;
+        }
+    }
+    .center-flex{
+        img{
+            width: 30%;
+            @include media-breakpoint-up(lg){
+                width: 10%;
+            }
+        }
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: $white-bg;
+        h1{
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+        .massage-btn{
+            color: $white-bg;
+        }
+    }
+}

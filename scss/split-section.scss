@@ -1,0 +1,47 @@
+.split-section{
+    position: relative;
+    background-color: $brown-bright;
+    #space{
+        background-color: $white-bg;
+        height: 200px;
+        width: 100%;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+        .content{
+            padding: $space 3rem $space 6rem;
+            @include media-breakpoint-down(sm){
+                padding: $space 0;
+                margin: auto;
+                width: 90%;
+                text-align: center;
+            }
+            @include media-breakpoint-down(md){
+                padding: $space 3rem;
+            }
+            h2{
+                margin-bottom: 2rem;
+            }
+            p{
+                margin-bottom: 3rem;
+            }
+            img{
+                position: absolute;
+                top: 170px;
+                right: 48%;
+                background-image: url("../media/Sonne_Icon.png");
+                width: 110px;
+                height: 110px;
+                z-index: 3;
+
+            }
+        }
+        .contain{
+            background-image: url("../media/Lomi2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

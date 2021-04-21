@@ -1,0 +1,39 @@
+footer{
+    padding: 50px 0;
+    background-color: $green;
+    img{
+        padding: 6rem;
+         @include media-breakpoint-down(md){
+             padding: 0 1rem;
+         }
+    }
+    .footing{
+        align-items: center;
+    }
+    .footer-content{
+        font-size: 100%;
+        padding: 2rem;
+        padding-left: 5rem;
+        border-left: 1px solid $green-bright;
+        @include media-breakpoint-down(md){
+            border: none;
+            font-size: 95%;
+        }
+        a{
+            display: block;
+        }
+        .internal-links{
+            display: block;
+            color: $green-bright;
+            text-decoration: unset;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+        .contact-details{
+            color: $green-bright;
+            text-decoration: unset;
+            margin: 0;
+        }
+        
+    }
+}

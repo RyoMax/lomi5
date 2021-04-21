@@ -1,0 +1,40 @@
+#service{
+    padding-bottom: $space;
+    .card{
+        background-color: transparent;
+        border: none;
+        margin-bottom: 3rem;
+        .card-img-top{
+            padding: 0 20%;
+        }
+        h3{
+            color: $red-orange;
+        }
+        p{
+            font-size: 1.2em;
+            width: 62%;
+            @include media-breakpoint-down(lg){
+                font-size: 1em;
+                width: 75%
+            }
+            @include media-breakpoint-down(md){
+                width: 86%;
+                font-size: 0.8em;
+            }
+        }
+    }
+    a{
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        @include media-breakpoint-down(md){
+            width: fit-content;
+        }
+        button{
+            width: 100%;
+            @include media-breakpoint-down(md){
+                width: inherit;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.offers{
+    padding: 50px 0 $space;
+    background-color: $green;
+    overflow: hidden;
+
+    h1{
+        font-family: 'Montserrat';
+        font-size: 1rem;
+        color: $white-bg;
+        text-align: center;
+        margin-bottom: 3rem;
+        div{
+            font-family: 'butler-ultra-light';
+            font-size: 3.5rem;
+        }
+    }
+    .offer{
+        margin: 0 0.75rem 3rem;
+        padding: 3rem 2rem;
+        //max-width: 546px;
+        background-color: $white-bg;
+        text-align: right;
+        color: $green;
+        box-shadow: 0 0 10px $black-font;
+        @include media-breakpoint-down(md){
+            padding: 2rem;
+        }
+        .offer-top{                
+            margin: 0 0 1rem;
+            padding: 0;
+            align-items: center;
+            .offer-img{
+                margin: 0;
+                padding: 0;
+                img{
+                    width: 100%;
+                    height: auto;    
+                }                    
+            }
+            .offer-detail{
+                margin: 0;
+                padding: 0;
+                h2{
+                    font-family: 'butler-ultra-light';
+                    font-size: 4.3rem;
+                    span{
+                        font-family: 'butler-light';
+                    }
+                    @include media-breakpoint-down(lg){
+                        font-size: 3.5rem;
+                    }
+                    @include media-breakpoint-down(md){
+                        font-size: 3rem;
+
+                    }
+                    @include media-breakpoint-down(sm){
+                        font-size: 3.3rem;
+                    }
+                }
+                h3{
+                    font-size: 1.5rem;
+                    font-family: 'Montserrat';
+                    @include media-breakpoint-down(lg){
+                        font-size: 1.1rem;
+                    }                        
+                    @include media-breakpoint-down(md){
+                        font-size: .85rem;
+                    }
+                }
+                p{
+                    font-style: italic;
+                    font-weight: 300;
+                    margin-bottom: 0;
+                    font-size: 1.1rem;
+                    @include media-breakpoint-down(lg){
+                        font-size: .9rem;
+                    }                        
+                    @include media-breakpoint-down(md){
+                        font-size: .65rem;
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .offer-bottom{
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid $green;
+            align-items: center;
+            overflow: visible;
+            @include media-breakpoint-down(md){
+                align-items: unset;
+            }
+            .offer-btn{
+                margin: 0;
+                padding: 0 .5rem;
+                overflow: visible;
+                a{
+                    margin: .8rem 0 0;
+                    width: 100%;
+                    @include media-breakpoint-down(md){
+                        margin-top: .5rem;
+                    }
+                    .massage-btn{
+                        width: 100%;
+                        background-color: $red-orange;
+                        color: $white-bg;
+                        &:hover, &:active{
+                            background-color: $white-bg;
+                            color: $black-font;
+                        }
+                        /* @include media-breakpoint-down(lg){
+                            font-size: 3.5rem;
+                        } */
+                        @include media-breakpoint-down(md){
+                            font-size: .7rem;
+                            padding: .1rem 0rem;
+                        }
+                    }
+                }
+            }
+            .dur{
+                padding: 0;
+                border-left: 1px $green solid;                   
+            }
+            p{
+                margin: 0;
+                font-size: 3rem;
+                font-family: 'butler-light';
+                @include media-breakpoint-down(lg){
+                    font-size: 2.3rem;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 1.55rem;
+                }
+            }
+        }            
+    }
+    #for-questions{
+        //padding-bottom: 2.5rem;
+        text-align: center;
+        font-family: 'butler-ultra-light';
+        font-size: 2rem;
+        color: $white-bg;
+        overflow: hidden;
+        align-self: end;
+        @include media-breakpoint-down(lg){
+            font-size: 1.8rem;
+        }          
+        @include media-breakpoint-down(md){
+            font-size: 1.2rem;
+        }
+        p:first-of-type{
+            margin: 0;
+        }        
+        p:last-of-type{
+            margin-top: 2rem;
+            font-size: 2.1rem;
+            font-family: 'butler-light';
+            @include media-breakpoint-down(lg){
+                font-size: 1.9rem;
+            }
+            @include media-breakpoint-down(md){
+                font-size: 1.3rem;
+            }
+        }
+        .btn-box{
+            margin-bottom: 2.5rem;
+            height: fit-content;
+            transform: translateY(7px);
+            width: 30%;
+            font-size: 1rem;
+            @include media-breakpoint-down(md){
+                transform: translateY(0px);
+                width: 50%;
+            }
+            button{
+                width: 100%;                    
+                font-family: 'Montserrat';
+                //font-size: 1.5rem;
+                background-color: $white-bg;
+                border: none;
+                &:hover, &:active{
+                    background-color: $red-orange;
+                    color: $white-bg;
+                    border: none;
+                }
+            }
+        }
+    }
+}

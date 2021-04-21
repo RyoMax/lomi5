@@ -1,0 +1,73 @@
+@import "../bootstrap-4.5.0/scss/_functions.scss";
+@import "../bootstrap-4.5.0/scss/_variables.scss";
+@import "../bootstrap-4.5.0/scss/mixins/_breakpoints.scss";
+
+$brown-bright: #DBCFBF;
+$green-bright: #CECDAE;
+$white-bg: #F9F5EC;
+$black-font: #262626;
+$red-orange: #AB6B4F;
+$green: #777657;
+$space: 100px;
+
+@font-face{
+    font-family: butler-ultra-light;
+    src: url("../fonts/Butler_Ultra_Light.otf");
+}
+@font-face{
+    font-family: butler-light;
+    src: url("../fonts/Butler_Light.otf");
+}
+:root{
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+a:hover{
+    color: $red-orange!important;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
+    color: $black-font;
+    
+    h1{
+        font-family: 'butler-ultra-light', 'Times New Roman', Times, serif;
+    }
+    h2, h3{
+        font-family: 'butler-light';
+    }
+    .btn-box{
+        display: inline-block;
+        margin-bottom: 1rem;
+        box-shadow: unset;
+        transition: all 0.2s;
+        &:hover, :active{
+            box-shadow: 5px 5px 10px $black-font;
+        }
+        .massage-btn{
+            border: $red-orange 3px solid;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            &:hover, :active{
+                background-color: $red-orange;
+                color: $white-bg;
+                box-shadow: 5px 5px 10px $black-font;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }        
+}
+@import "header";
+@import "nav";
+@import "center-section";
+@import "split-section";
+@import "service";
+@import "about-henriette";
+@import "offers";
+@import "contact";
+@import "footer";
