@@ -1,6 +1,9 @@
 nav{
     background:$green;
     height: 10vh;
+    &.brown-bright{
+        background: $brown-bright;
+    }
     @include media-breakpoint-up(xs){
         height: 15vh;
     }

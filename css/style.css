@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: butler-ultra-light;
   src: url("../fonts/Butler_Ultra_Light.otf");
@@ -6,14 +14,6 @@
   font-family: butler-light;
   src: url("../fonts/Butler_Light.otf");
 }
-:root {
-  overflow-x: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 a:hover {
   color: #AB6B4F !important;
 }
@@ -98,6 +98,9 @@ nav {
   height: 10vh;
   height: 15vh;
 }
+nav.brown-bright {
+  background: #DBCFBF;
+}
 @media (min-width: 576px) {
   nav {
     height: 10vh;
@@ -174,7 +177,7 @@ nav ul li:last-child {
   margin-right: 0;
 }
 .split-section .row .content {
-  padding: 100px 3rem 100px 6rem;
+  padding: 100px 5rem 100px 5rem;
 }
 @media (max-width: 767.98px) {
   .split-section .row .content {

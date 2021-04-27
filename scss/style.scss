@@ -1,14 +1,8 @@
+@import "reset";
+@import "variables";
 @import "../bootstrap-4.5.0/scss/_functions.scss";
 @import "../bootstrap-4.5.0/scss/_variables.scss";
 @import "../bootstrap-4.5.0/scss/mixins/_breakpoints.scss";
-
-$brown-bright: #DBCFBF;
-$green-bright: #CECDAE;
-$white-bg: #F9F5EC;
-$black-font: #262626;
-$red-orange: #AB6B4F;
-$green: #777657;
-$space: 100px;
 
 @font-face{
     font-family: butler-ultra-light;
@@ -18,12 +12,7 @@ $space: 100px;
     font-family: butler-light;
     src: url("../fonts/Butler_Light.otf");
 }
-:root{
-    overflow-x: hidden;
-}
-*{
-    box-sizing: border-box;
-}
+
 a:hover{
     color: $red-orange!important;
 }

@@ -10,7 +10,7 @@
         margin-left: 0;
         margin-right: 0;
         .content{
-            padding: $space 3rem $space 6rem;
+            padding: $space 5rem $space 5rem;
             @include media-breakpoint-down(sm){
                 padding: $space 0;
                 margin: auto;
