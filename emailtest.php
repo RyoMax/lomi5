@@ -15,7 +15,7 @@
 <p>This is feedback form. Send us your feedback !</p>
 </div>
 <!-- Feedback Form -->
-<form action="#" id="form" method="post" name="form">
+<form action="emailTester.php" id="form" method="post" name="form">
 <input name="vname" placeholder="Your Name" type="text" value="">
 <input name="vemail" placeholder="Your Email" type="text" value="">
 <input name="sub" placeholder="Subject" type="text" value="">
