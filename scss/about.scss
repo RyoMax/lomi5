@@ -1,0 +1,20 @@
+#about{
+    background-color: $brown-bright;
+
+    .about-lomi{
+
+        .contain{
+            &.col-12{
+                display: none;
+            }
+            background: center / cover no-repeat url(../media/Lomi2.jpg);
+
+        }
+        .content{
+
+        }
+    }
+    .split-section{
+        background-color: $green-bright;
+    }
+}

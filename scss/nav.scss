@@ -34,11 +34,25 @@ nav{
             margin-left: 2rem;
             a{
                 color: $black-font;
+                padding: 0 1rem;
             }
             &:last-child{
                 border: $red-orange 3px solid;
                 border-radius: 3px;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    cursor: pointer;
+                    padding: 0 1rem;
+                    &:hover{
+                        color: $red-orange;
+                    }
+                }
             }
+
         }                
     }
 }

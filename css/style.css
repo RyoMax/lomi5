@@ -138,10 +138,23 @@ nav ul li {
 }
 nav ul li a {
   color: #262626;
+  padding: 0 1rem;
 }
 nav ul li:last-child {
   border: #AB6B4F 3px solid;
   border-radius: 3px;
+}
+nav ul li:last-child div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+nav ul li:last-child div:hover {
+  color: #AB6B4F;
 }
 
 .center-section {
@@ -325,6 +338,19 @@ nav ul li:last-child {
 }
 #about-henriette button {
   margin-left: auto;
+}
+
+#about {
+  background-color: #DBCFBF;
+}
+#about .about-lomi .contain {
+  background: center/cover no-repeat url(../media/Lomi2.jpg);
+}
+#about .about-lomi .contain.col-12 {
+  display: none;
+}
+#about .split-section {
+  background-color: #CECDAE;
 }
 
 .offers {
