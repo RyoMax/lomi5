@@ -1,27 +1,29 @@
 <?php
-$to = 'info@lomi5.de';
-$subject = 'Marriage Proposal';
-$from = 'booking@lommi5.de';
- 
-// To send HTML mail, the Content-type header must be set
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
- 
-// Create email headers
-$headers .= 'From: '.$from."\r\n".
-    'Reply-To: '.$from."\r\n" .
-    'X-Mailer: PHP/' . phpversion();
- 
-// Compose a simple HTML email message
-$message = '<html><body>';
-$message .= '<h1 style="color:#f40;">Hi Jane!</h1>';
-$message .= '<p style="color:#080;font-size:18px;">Will you marry me?</p>';
-$message .= '</body></html>';
- 
-// Sending email
-if(mail($to, $subject, $message, $headers)){
-    echo 'Your mail has been sent successfully.';
-} else{
-    echo 'Unable to send email. Please try again.';
+if(isset($_POST["submit"])){
+// Checking For Blank Fields..
+if($_POST["name"]==""||$_POST["email"]==""||$_POST["message"]==""){
+echo "Fill All Fields..";
+}else{
+// Check if the "Sender's Email" input field is filled out
+$email= 'info@lomi5.de';
+// Sanitize E-mail Address
+$email =filter_var($email, FILTER_SANITIZE_EMAIL);
+// Validate E-mail Address
+$email= filter_var($email, FILTER_VALIDATE_EMAIL);
+if (!$email){
+echo "Invalid Sender's Email";
+}
+else{
+$subject = 'Neue Nutzeranfrage';
+$message = $_POST['message'];
+$headers = 'From:'. $email2 . "rn"; // Sender's Email
+$headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
+// Message lines should not exceed 70 characters (PHP rule), so wrap it
+$message = wordwrap($message, 70);
+// Send Mail By PHP Mail Function
+mail($email, $subject, $message, $headers);
+echo "Your mail has been sent successfuly ! Thank you for your feedback";
+}
+}
 }
 ?>
