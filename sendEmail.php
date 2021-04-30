@@ -23,6 +23,8 @@ $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
 if (!mail($email, $subject, $message, $headers)) {
     // Reschedule for later try or panic appropriately!
+    echo "Something went wrong...";
+
  }
  else{
     echo "Your mail has been sent successfuly ! Thank you for your feedback";
