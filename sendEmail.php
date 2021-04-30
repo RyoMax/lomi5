@@ -21,8 +21,13 @@ $headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
 // Message lines should not exceed 70 characters (PHP rule), so wrap it
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
-mail($email, $subject, $message, $headers);
-echo "Your mail has been sent successfuly ! Thank you for your feedback";
+if (!mail($email, $subject, $message, $headers)) {
+    // Reschedule for later try or panic appropriately!
+ }
+ else{
+    echo "Your mail has been sent successfuly ! Thank you for your feedback";
+
+ }
 }
 }
 }
