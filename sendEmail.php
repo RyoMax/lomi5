@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST["submit"])){
+    echo "SOMETHING HAPPEND!";
 // Checking For Blank Fields..
 if($_POST["name"] == "" || $_POST["email"] == "" || $_POST["message"] == ""){
 echo "Fill All Fields..";
@@ -21,7 +22,7 @@ $headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
 // Message lines should not exceed 70 characters (PHP rule), so wrap it
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
-if (!mail("info@lomi5.de", $subject, $message, $headers)) {
+if (!mail("info@lomi5.de", "Neue Nutzeranfrage", $message, $headers)) {
     echo "Something went wrong...";
  }
  else{
