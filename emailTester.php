@@ -21,7 +21,6 @@ $headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
 // Message lines should not exceed 70 characters (PHP rule), so wrap it
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
-mail("info@lomi5.de", $subject, $message, $headers);
 if (!mail("info@lomi5.de", $subject, $message, $headers)) {
     echo "Something went wrong...";
  }
