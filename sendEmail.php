@@ -1,6 +1,5 @@
 <?php
 if(isset($_POST["submit"])){
-    echo "SOMETHING HAPPEND!";
 // Checking For Blank Fields..
 if($_POST["name"] == "" || $_POST["email"] == "" || $_POST["message"] == ""){
 echo "Fill All Fields..";
@@ -28,6 +27,7 @@ if (!mail("info@lomi5.de", "Neue Nutzeranfrage", $message, $headers)) {
  }
  else{
     echo "Your mail has been sent successfuly ! Thank you for your feedback";
+    header("Location:./");
 
  }
 }
