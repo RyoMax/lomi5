@@ -80,6 +80,9 @@
                 resize: none;
                 height: 12rem;
             }
+            label .required{
+                color: $red-orange;
+            }
             .btn-box{
                 margin-left: auto;
             }

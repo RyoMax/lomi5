@@ -673,6 +673,9 @@ nav ul li:last-child div:hover {
   resize: none;
   height: 12rem;
 }
+#contact .content form label .required {
+  color: #AB6B4F;
+}
 #contact .content form .btn-box {
   margin-left: auto;
 }
