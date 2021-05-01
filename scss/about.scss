@@ -1,12 +1,12 @@
 #about{
-    background-color: $brown-bright;
+    background-color: $white-bg;
 
     .about-lomi{
 
         .contain{
-            &.col-12{
+            /* &.col-12{
                 display: none;
-            }
+            } */
             background: center / cover no-repeat url(../media/Lomi2.jpg);
 
         }

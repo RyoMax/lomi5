@@ -101,6 +101,9 @@ nav {
 nav.brown-bright {
   background: #DBCFBF;
 }
+nav.white-bg {
+  background-color: #F9F5EC;
+}
 @media (min-width: 576px) {
   nav {
     height: 10vh;
@@ -341,13 +344,13 @@ nav ul li:last-child div:hover {
 }
 
 #about {
-  background-color: #DBCFBF;
+  background-color: #F9F5EC;
 }
 #about .about-lomi .contain {
+  /* &.col-12{
+      display: none;
+  } */
   background: center/cover no-repeat url(../media/Lomi2.jpg);
-}
-#about .about-lomi .contain.col-12 {
-  display: none;
 }
 #about .split-section {
   background-color: #CECDAE;

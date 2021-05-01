@@ -4,6 +4,9 @@ nav{
     &.brown-bright{
         background: $brown-bright;
     }
+    &.white-bg{
+        background-color: $white-bg;
+    }
     @include media-breakpoint-up(xs){
         height: 15vh;
     }
