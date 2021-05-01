@@ -26,7 +26,7 @@ echo "Invalid Sender's Email";
 else{
 $subject = "Neue Nutzeranfrage von ".$name; 
 $mailText = $_POST['message'];
-$message = '<html><body style="background-color:#F9F5EC;>';
+$message = '<html><head><meta charset="utf-8"></head><body style="background-color:#F9F5EC;>';
 $message .= '<h1 style="color:#262626;">Hallo Henriette!</h1>';
 $message .= '<h3 style="color:#262626;">'. $name . ' Hat eine Anfrage.</h3';
 $message .= '<p style="color:#262626;">Inhalt der Nachricht:</p';
@@ -49,3 +49,6 @@ if (!mail("info@lomi5.de", $subject, $message, $headers)) {
 }
 }
 ?>
+
+
+
