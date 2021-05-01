@@ -9,6 +9,7 @@
         color: $black-font;
         text-align: center;
         margin-bottom: 3rem;
+        @include letterSpace();
         div{
             font-family: 'butler-ultra-light';
             font-size: 3.5rem;
