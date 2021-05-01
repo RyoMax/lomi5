@@ -23,11 +23,8 @@ body {
   font-family: "Montserrat", sans-serif, "Times New Roman", Times, serif;
   color: #262626;
 }
-body h1 {
+body h1, body h2, body h3 {
   font-family: "butler-ultra-light", "Times New Roman", Times, serif;
-}
-body h2, body h3 {
-  font-family: "butler-light";
 }
 body .btn-box {
   display: inline-block;
@@ -332,34 +329,30 @@ nav ul li:last-child div:hover {
     text-align: center;
   }
 }
-#about-henriette .content p {
-  font-family: "butler-light";
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-@media (max-width: 1199.98px) {
-  #about-henriette .content p {
-    font-size: 1.2em;
-  }
-}
-@media (max-width: 991.98px) {
-  #about-henriette .content p {
-    font-size: 1em;
-  }
-}
 #about-henriette .content h3 {
+  /* font-family: 'butler-light';
+  font-size: 1.5rem; */
+  margin-bottom: 2rem;
+  /* @include media-breakpoint-down(lg){
+      font-size: 1.2em;
+  }
+  @include media-breakpoint-down(md){
+      font-size: 1em;
+  } */
+}
+#about-henriette .content h4 {
   font-family: "Montserrat";
   color: #262626;
   font-size: 1rem;
   margin-bottom: 3rem;
 }
 @media (max-width: 1199.98px) {
-  #about-henriette .content h3 {
+  #about-henriette .content h4 {
     font-size: 1em;
   }
 }
 @media (max-width: 991.98px) {
-  #about-henriette .content h3 {
+  #about-henriette .content h4 {
     font-size: 0.8em;
   }
 }
@@ -374,6 +367,10 @@ nav ul li:last-child div:hover {
 #about {
   background-color: #F9F5EC;
 }
+#about h2 {
+  font-family: "Montserrat", sans-serif, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+}
 #about #about-lomi {
   background-color: #F9F5EC;
 }
@@ -386,6 +383,10 @@ nav ul li:last-child div:hover {
 }
 #about #about-lomi .content {
   background-color: #DBCFBF;
+}
+#about .after-text {
+  text-align: center;
+  margin: 5rem 0;
 }
 #about #more-about-henriette {
   background-color: #CECDAE;
@@ -667,20 +668,16 @@ nav ul li:last-child div:hover {
   }
 }
 #contact .content p {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem;
+  @include media-breakpoint-down(lg){
+      font-size: 1em;
+  }
+  @include media-breakpoint-down(md){
+      font-size: 1em;
+  } */
 }
 #contact .content p span {
   display: block;
-}
-@media (max-width: 1199.98px) {
-  #contact .content p {
-    font-size: 1em;
-  }
-}
-@media (max-width: 991.98px) {
-  #contact .content p {
-    font-size: 1em;
-  }
 }
 #contact .content h3 {
   font-size: 3rem;

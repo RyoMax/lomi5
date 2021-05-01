@@ -21,11 +21,8 @@ body{
     font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
     color: $black-font;
     
-    h1{
+    h1, h2, h3{
         font-family: 'butler-ultra-light', 'Times New Roman', Times, serif;
-    }
-    h2, h3{
-        font-family: 'butler-light';
     }
     .btn-box{
         display: inline-block;

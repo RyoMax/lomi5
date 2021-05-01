@@ -1,5 +1,9 @@
 #about{
     background-color: $white-bg;
+    h2{
+        font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+    }
 
     #about-lomi{
         background-color: $white-bg;
@@ -13,6 +17,10 @@
         .content{
             background-color: $brown-bright;
         }
+    }
+    .after-text{
+        text-align: center;
+        margin: 5rem 0;
     }
     #more-about-henriette{
         background-color: $green-bright;
