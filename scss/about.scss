@@ -36,6 +36,7 @@
         background-color: $green-bright;
         .contain{
             background: center / cover no-repeat url(../media/jette-about.jpg);
+            opacity: 0.8;
         }
     }
 }

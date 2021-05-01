@@ -1,0 +1,17 @@
+.impressum{
+    background-color: $white-bg;
+    padding: $space 0;
+    article{
+        margin: 2rem 0;
+        h4{
+            font-weight: bold;
+            margin: 0;
+        }
+        p:first-child{
+            margin-top: 0;
+        }
+        p:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}
