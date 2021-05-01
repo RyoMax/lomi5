@@ -28,10 +28,10 @@ $subject = "Neue Nutzeranfrage von ".$name;
 $mailText = $_POST['message'];
 $message = '<html><head><meta charset="utf-8"></head><body style="background-color:#F9F5EC;>';
 $message .= '<h1 style="color:#262626;">Hallo Henriette!</h1>';
-$message .= '<h3 style="color:#262626;">'. $name . ' Hat eine Anfrage.</h3';
+$message .= '<h3 style="color:#262626;">'. $name . ' hat dir eine Anfrage geschickt.</h3';
 $message .= '<p style="color:#262626;">Inhalt der Nachricht:</p';
-$message .= '<p style="color:#262626;">' . $mailText . '</p';
-$message .= '<p style="color:#262626;">Emailaddresse vom Kunden:' . $email . '</p';
+$message .= '<p style="color:#262626;">' . utf8_encode($mailText) . '</p';
+$message .= '<p style="color:#262626;">E-Mail-Adresse vom Kunden:' . $email . '</p';
 $message .= '</body></html>';
 // Message lines should not exceed 70 characters (PHP rule), so wrap it
 $message = wordwrap($message, 70);
