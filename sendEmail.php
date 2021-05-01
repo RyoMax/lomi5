@@ -2,7 +2,8 @@
 if(isset($_POST["submit"])){
 // Checking For Blank Fields..
 if($_POST["name"] == "" || $_POST["email"] == "" || $_POST["message"] == ""){
-echo "Fill All Fields..";
+    header("Location: https://www.lomi5.de/empty.html");
+    die();
 }else{
 // Check if the "Sender's Email" input field is filled out
 $email=$_POST['email'];
@@ -23,10 +24,11 @@ $headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
 if (!mail("info@lomi5.de", "Neue Nutzeranfrage", $message, $headers)) {
-    echo "Something went wrong...";
+    header("Location: https://www.lomi5.de/error.html");
+    die();
  }
  else{
-    header("Location: https://www.lomi5.de/");
+    header("Location: https://www.lomi5.de/success.html");
     die();
 
  }
