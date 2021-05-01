@@ -1,17 +1,18 @@
 .offers{
     padding: 50px 0 $space;
-    background-color: $green;
+    background-color: $brown-bright;
     overflow: hidden;
 
     h1{
         font-family: 'Montserrat';
         font-size: 1rem;
-        color: $white-bg;
+        color: $black-font;
         text-align: center;
         margin-bottom: 3rem;
         div{
             font-family: 'butler-ultra-light';
             font-size: 3.5rem;
+            margin-top: 1rem;
         }
     }
     .offer{
@@ -21,7 +22,6 @@
         background-color: $white-bg;
         text-align: right;
         color: $green;
-        box-shadow: 0 0 10px $black-font;
         @include media-breakpoint-down(md){
             padding: 2rem;
         }
@@ -138,14 +138,20 @@
             }
         }            
     }
+    .last-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #for-questions{
         //padding-bottom: 2.5rem;
+        
         text-align: center;
         font-family: 'butler-ultra-light';
         font-size: 2rem;
-        color: $white-bg;
+        color: $black-font;
         overflow: hidden;
-        align-self: end;
+        
         @include media-breakpoint-down(lg){
             font-size: 1.8rem;
         }          

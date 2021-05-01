@@ -15,7 +15,7 @@
   src: url("../fonts/Butler_Light.otf");
 }
 a:hover {
-  color: #AB6B4F !important;
+  color: #AB6B4F;
 }
 
 body {
@@ -70,6 +70,7 @@ header#header-bg {
   }
 }
 header .center-flex {
+  position: relative;
   transform: translateY(-8%);
   display: flex;
   height: 100%;
@@ -84,7 +85,7 @@ header .center-flex img {
 }
 @media (min-width: 992px) {
   header .center-flex img {
-    width: 16%;
+    width: 12%;
   }
 }
 header .center-flex h1 {
@@ -93,7 +94,7 @@ header .center-flex h1 {
 }
 @media (min-width: 768px) {
   header .center-flex h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 }
 header .center-flex .btn-box {
@@ -107,7 +108,7 @@ header .center-flex .btn-box .massage-btn {
 }
 @media (min-width: 768px) {
   header .center-flex .btn-box .massage-btn {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -154,7 +155,7 @@ nav .menu-icon {
 }
 nav ul {
   margin-left: auto;
-  font-family: "butler-light", "Times New Roman", Times, serif;
+  font-family: "butler-ultra-light", "Times New Roman", Times, serif;
 }
 @media (max-width: 991.98px) {
   nav ul {
@@ -172,6 +173,7 @@ nav ul li a {
 nav ul li:last-child {
   border: #AB6B4F 3px solid;
   border-radius: 3px;
+  font-family: "butler-light", "Times New Roman", Times, serif;
 }
 nav ul li:last-child div {
   display: flex;
@@ -372,31 +374,39 @@ nav ul li:last-child div:hover {
 #about {
   background-color: #F9F5EC;
 }
-#about .about-lomi .contain {
+#about #about-lomi {
+  background-color: #F9F5EC;
+}
+#about #about-lomi .contain {
   /* &.col-12{
       display: none;
   } */
-  background: center/cover no-repeat url(../media/Lomi-Haus.jpg);
+  background: left/cover no-repeat url(../media/lomi-massage_min.jpg);
+  opacity: 0.7;
 }
-#about .split-section {
+#about #about-lomi .content {
+  background-color: #DBCFBF;
+}
+#about #more-about-henriette {
   background-color: #CECDAE;
 }
 
 .offers {
   padding: 50px 0 100px;
-  background-color: #777657;
+  background-color: #DBCFBF;
   overflow: hidden;
 }
 .offers h1 {
   font-family: "Montserrat";
   font-size: 1rem;
-  color: #F9F5EC;
+  color: #262626;
   text-align: center;
   margin-bottom: 3rem;
 }
 .offers h1 div {
   font-family: "butler-ultra-light";
   font-size: 3.5rem;
+  margin-top: 1rem;
 }
 .offers .offer {
   margin: 0 0.75rem 3rem;
@@ -404,7 +414,6 @@ nav ul li:last-child div:hover {
   background-color: #F9F5EC;
   text-align: right;
   color: #777657;
-  box-shadow: 0 0 10px #262626;
 }
 @media (max-width: 991.98px) {
   .offers .offer {
@@ -546,13 +555,17 @@ nav ul li:last-child div:hover {
     font-size: 1.55rem;
   }
 }
+.offers .last-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .offers #for-questions {
   text-align: center;
   font-family: "butler-ultra-light";
   font-size: 2rem;
-  color: #F9F5EC;
+  color: #262626;
   overflow: hidden;
-  align-self: end;
 }
 @media (max-width: 1199.98px) {
   .offers #for-questions {
@@ -854,6 +867,9 @@ footer .footer-content {
 }
 footer .footer-content a {
   display: block;
+}
+footer .footer-content a:hover {
+  color: #F9F5EC;
 }
 footer .footer-content .internal-links {
   display: block;

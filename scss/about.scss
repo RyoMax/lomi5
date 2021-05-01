@@ -1,20 +1,20 @@
 #about{
     background-color: $white-bg;
 
-    .about-lomi{
-
+    #about-lomi{
+        background-color: $white-bg;
         .contain{
             /* &.col-12{
                 display: none;
             } */
-            background: center / cover no-repeat url(../media/Lomi-Haus.jpg);
-
+            background: left / cover no-repeat url(../media/lomi-massage_min.jpg);
+            opacity: 0.7;
         }
         .content{
-
+            background-color: $brown-bright;
         }
     }
-    .split-section{
+    #more-about-henriette{
         background-color: $green-bright;
     }
 }

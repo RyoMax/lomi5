@@ -36,7 +36,7 @@ nav{
     }
     ul{
         margin-left: auto;
-        font-family: 'butler-light', 'Times New Roman', Times, serif;
+        font-family: 'butler-ultra-light', 'Times New Roman', Times, serif;
         @include media-breakpoint-down(md){
             text-align: center;
         }
@@ -50,6 +50,7 @@ nav{
             &:last-child{
                 border: $red-orange 3px solid;
                 border-radius: 3px;
+                font-family:  'butler-light', 'Times New Roman', Times, serif;
                 div{
                     display: flex;
                     align-items: center;

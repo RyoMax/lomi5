@@ -14,11 +14,12 @@ header{
         }
     }
     .center-flex{
+        position: relative;
         transform: translateY(-8%);
         img{
             width: 30%;
             @include media-breakpoint-up(lg){
-                width: 16%;
+                width: 12%;
             }
         }
         display: flex;
@@ -32,7 +33,7 @@ header{
             font-size: 3rem;
             margin-bottom: 2rem;
             @include media-breakpoint-up(md){
-                font-size: 7rem;
+                font-size: 5rem;
             }
         }
         .btn-box{
@@ -43,7 +44,7 @@ header{
                 background-color: $red-orange;
                 font-size: .8rem;
                 @include media-breakpoint-up(md){
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
             }
         }
