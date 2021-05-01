@@ -27,7 +27,7 @@ if (!mail("info@lomi5.de", "Neue Nutzeranfrage", $message, $headers)) {
  }
  else{
     echo "Your mail has been sent successfuly ! Thank you for your feedback";
-    header("Location:./");
+    header("Location:https://www.lomi5.de/");
 
  }
 }
