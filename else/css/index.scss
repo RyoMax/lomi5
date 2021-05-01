@@ -1,0 +1,95 @@
+$prime-green: #2d3d36;
+$sec-green: #9aaa8d;
+$prime-red: #412413;
+$sec-red: #daa18a;
+$blue: #627875;
+
+@import "../lib/bootstrap/scss/bootstrap"; //bootstrap
+
+h1.big{
+    font-size: 500%;
+    border: solid black 3px;
+    background-color: lightslategray;
+    margin: auto;
+}
+
+div.introduction{
+
+    .upper{
+
+        #sun{
+            //width: 50%;
+            @include media-breakpoint-up(lg){
+                transform: translateY(105px);
+                margin-top: 3rem;
+            }
+            @include media-breakpoint-down(lg){
+                transform: translateY(150px);
+                margin-top: 3rem;
+            }
+            @include media-breakpoint-down(md){
+                transform: translateY(94px);
+                margin-top: 3rem;
+            }
+            @include media-breakpoint-down(sm){
+                transform: translateY(107px);
+                margin-top: 0px;
+            }
+            @include media-breakpoint-down(xs){
+                transform: translateY(55px);
+            }
+            transition: all 1.8s;
+            &.rise{
+                @include media-breakpoint-down(xl){
+                    transform: translateY(-60px);
+                }
+                @include media-breakpoint-down(lg){
+                    transform: translateY(-30px);
+                }
+                @include media-breakpoint-down(sm){
+                    transform: translateY(-15px);
+                }
+                @include media-breakpoint-down(xs){
+                    transform: translateY(-25px);
+                }
+            }
+        }
+    }
+    .downer{
+        .down{
+            @include media-breakpoint-down(xl){
+                transform: translateY(-100px);
+            }
+            @include media-breakpoint-down(lg){
+                transform: translateY(-58px);
+            }
+            @include media-breakpoint-down(sm){
+                transform: translateY(-44px);
+            }
+            @include media-breakpoint-down(xs){
+                transform: translateY(-44px);
+            }
+        }
+    }
+    .jumbotron{
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        margin: 0px;
+        background-color: $sec-green;
+        p{
+            margin-bottom: 0;
+            font-size: 90%;
+            line-height: 1.3;
+        }
+        @include media-breakpoint-down(xl){
+            transform: translateY(-40px);
+        }
+        @include media-breakpoint-down(lg){
+            transform: translateY(-30px);
+        }
+        @include media-breakpoint-down(sm){
+            transform: translateY(-10px);
+            font-size: 80%;
+        }
+    }
+}
