@@ -1,6 +1,6 @@
 #contact{
     position: relative;
-    background-color: $brown-bright;
+    background-color: $white-bg;
     height: fit-content;
     .icon-container{
         position: absolute;
@@ -71,9 +71,9 @@
                 margin-bottom: 1rem;
                 border-color: $black-font;
                 &:focus{
-                    border: 2px solid $red;
+                    border: 2px solid $green;
                     outline: none;
-                    box-shadow: 0 0 5px $red-orange;
+                    box-shadow: 0 0 5px $green;
                 }
             }
             textarea{
@@ -90,7 +90,7 @@
         } 
     }
     .contain{
-        background-image: url("../media/Henriette.jpg");
+        background-image: url("../media/Lomi-Haus.jpg");
         background-position: right;
     }
 }

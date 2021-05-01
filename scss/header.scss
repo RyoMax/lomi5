@@ -1,10 +1,11 @@
 header{
-    background-color: $green;
+    background-color: $white-bg;
     &#header-bg{
         height: 90vh;
-        background-image: url("../media/Titelbild.jpg");
+        background-image: url("../media/header_min.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        opacity: .8;
         @include media-breakpoint-up(xs){
             height: 85vh;
         }
@@ -13,10 +14,11 @@ header{
         }
     }
     .center-flex{
+        transform: translateY(-8%);
         img{
             width: 30%;
             @include media-breakpoint-up(lg){
-                width: 10%;
+                width: 16%;
             }
         }
         display: flex;
@@ -27,11 +29,24 @@ header{
         text-align: center;
         color: $white-bg;
         h1{
-            font-size: 4rem;
+            font-size: 3rem;
             margin-bottom: 2rem;
+            @include media-breakpoint-up(md){
+                font-size: 7rem;
+            }
         }
-        .massage-btn{
-            color: $white-bg;
+        .btn-box{
+            opacity: 1;
+            .massage-btn{
+                opacity: 1;
+                color: $white-bg;
+                background-color: $red-orange;
+                font-size: .8rem;
+                @include media-breakpoint-up(md){
+                    font-size: 1.5rem;
+                }
+            }
         }
+        
     }
 }
