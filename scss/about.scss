@@ -2,11 +2,14 @@
     background-color: $white-bg;
     h2{
         font-family: 'Montserrat', sans-serif, 'Times New Roman', Times, serif;
-        margin-bottom: .8rem;
+        margin: 2rem 0 .8rem;
         font-size: .9rem;
         @include letterSpace();
     }
     .split-section{
+        .content{
+            padding: 35px 5rem;
+        }
         h3{
             margin-bottom: 5rem;
         }
@@ -31,5 +34,8 @@
     }
     #more-about-henriette{
         background-color: $green-bright;
+        .contain{
+            background: center / cover no-repeat url(../media/jette-about.jpg);
+        }
     }
 }
