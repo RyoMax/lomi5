@@ -55,12 +55,12 @@
         }
         h3{
             font-size: 3rem;
-            @include media-breakpoint-down(lg){
+            /* @include media-breakpoint-down(lg){
                 font-size: 1em;
             }
             @include media-breakpoint-down(md){
                 font-size: 0.8em;
-            }
+            } */
         }   
         form{
             

@@ -9,6 +9,10 @@
     .split-section{
         .content{
             padding: 35px 5rem;
+            @include media-breakpoint-down(sm){
+                padding: 35px 0;
+                width: 100%;
+            }
         }
         h3{
             margin-bottom: 5rem;

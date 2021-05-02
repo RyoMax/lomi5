@@ -15,6 +15,9 @@
             font-size: 3.5rem;
             margin-top: 1rem;
             letter-spacing: normal;
+            @include media-breakpoint-down(sm){
+                font-size: 2.8rem;
+            }
         }
     }
     .offer{
@@ -116,9 +119,17 @@
                         /* @include media-breakpoint-down(lg){
                             font-size: 3.5rem;
                         } */
+                        @include media-breakpoint-down(lg){
+                            font-size: .8rem;
+                            padding: .1rem 0rem;
+                        }
                         @include media-breakpoint-down(md){
                             font-size: .7rem;
                             padding: .1rem 0rem;
+                        }
+                        @include media-breakpoint-down(sm){
+                            font-size: .6rem;
+                            letter-spacing: 2px;
                         }
                     }
                 }

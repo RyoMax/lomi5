@@ -1,7 +1,7 @@
 nav{
     position: relative;
     background:$white-bg;
-    height: 10vh;
+    min-height: 10vh;
     z-index: 8;
     /* &.brown-bright{
         background: $brown-bright;
@@ -16,10 +16,10 @@ nav{
         }
     } */
     @include media-breakpoint-up(xs){
-        height: 15vh;
+        min-height: 15vh;
     }
     @include media-breakpoint-up(sm){
-        height: 10vh;
+        min-height: 10vh;
     }
     .navbar-toggler:focus{
         box-shadow: none;

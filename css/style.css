@@ -125,7 +125,7 @@ header .center-flex .btn-box .massage-btn {
 nav {
   position: relative;
   background: #F9F5EC;
-  height: 10vh;
+  min-height: 10vh;
   z-index: 8;
   /* &.brown-bright{
       background: $brown-bright;
@@ -139,11 +139,11 @@ nav {
           color: $white-bg;
       }
   } */
-  height: 15vh;
+  min-height: 15vh;
 }
 @media (min-width: 576px) {
   nav {
-    height: 10vh;
+    min-height: 10vh;
   }
 }
 nav .navbar-toggler:focus {
@@ -390,6 +390,12 @@ nav ul li:last-child div:hover {
 #about .split-section .content {
   padding: 35px 5rem;
 }
+@media (max-width: 767.98px) {
+  #about .split-section .content {
+    padding: 35px 0;
+    width: 100%;
+  }
+}
 #about .split-section h3 {
   margin-bottom: 5rem;
 }
@@ -436,6 +442,11 @@ nav ul li:last-child div:hover {
   font-size: 3.5rem;
   margin-top: 1rem;
   letter-spacing: normal;
+}
+@media (max-width: 767.98px) {
+  .offers h1 div {
+    font-size: 2.8rem;
+  }
 }
 .offers .offer {
   margin: 0 0.75rem 3rem;
@@ -559,10 +570,22 @@ nav ul li:last-child div:hover {
   background-color: #F9F5EC;
   color: #262626;
 }
+@media (max-width: 1199.98px) {
+  .offers .offer .offer-bottom .offer-btn a .massage-btn {
+    font-size: 0.8rem;
+    padding: 0.1rem 0rem;
+  }
+}
 @media (max-width: 991.98px) {
   .offers .offer .offer-bottom .offer-btn a .massage-btn {
     font-size: 0.7rem;
     padding: 0.1rem 0rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .offers .offer .offer-bottom .offer-btn a .massage-btn {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
   }
 }
 .offers .offer .offer-bottom .dur {
@@ -714,16 +737,12 @@ nav ul li:last-child div:hover {
 }
 #contact .content h3 {
   font-size: 3rem;
-}
-@media (max-width: 1199.98px) {
-  #contact .content h3 {
-    font-size: 1em;
+  /* @include media-breakpoint-down(lg){
+      font-size: 1em;
   }
-}
-@media (max-width: 991.98px) {
-  #contact .content h3 {
-    font-size: 0.8em;
-  }
+  @include media-breakpoint-down(md){
+      font-size: 0.8em;
+  } */
 }
 #contact .content form input:not(input[type=submit]), #contact .content form textarea {
   width: 100%;
