@@ -243,7 +243,7 @@ nav ul li:last-child div:hover {
 }
 @media (max-width: 991.98px) {
   .split-section .row .content {
-    padding: 100px 3rem;
+    padding: 100px 0rem;
   }
 }
 .split-section .row .content h2 {
