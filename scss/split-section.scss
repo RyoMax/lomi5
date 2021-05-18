@@ -40,7 +40,7 @@
         }
         .contain{
             display: none;
-            @include media-breakpoint-up(sm){
+            @include media-breakpoint-up(md){
                 display: block;
                 background-image: url("../media/Lomi2.webp");
                 background-size: cover;

@@ -23,6 +23,9 @@ header{
             @include media-breakpoint-up(xs){
                 height: 85vh;
             }
+            @include media-breakpoint-up(md){
+                background-image: url("../media/header-mobile.webp");
+            }
             @include media-breakpoint-up(sm){
                 height: 90vh;
             }

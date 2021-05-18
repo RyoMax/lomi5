@@ -42,7 +42,7 @@
     }
     .contain{
         display: none;
-            @include media-breakpoint-up(sm){
+            @include media-breakpoint-up(md){
                 display: block;
                 background-image: url("../media/jette-start.webp");
                 background-position: right;
