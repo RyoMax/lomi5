@@ -14,15 +14,16 @@
             src: url(" ./fonts/Butler_Ultra_Light.otf"); font-display: swap; } @font-face { font-family: butler-light;
         src: url("./fonts/Butler_Light.otf"); font-display: swap; } @font-face { font-family: Montserrat; src:
         url("./fonts/Montserrat-Regular.ttf"); font-weight: normal; font-display: swap; } @font-face { font-family:
-        Montserrat; src: url("./fonts/Montserrat-Medium.ttf"); font-weight: 500; font-display: swap; } :root { --blue: #007bff; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red:
-        #dc3545; --orange: #fd7e14; --yellow: #ffc107; --green: #28a745; --teal: #20c997; --cyan: #17a2b8; --white:
-        #fff; --gray: #6c757d; --gray-dark: #343a40; --primary: #007bff; --secondary: #6c757d; --success: #28a745;
-        --info: #17a2b8; --warning: #ffc107; --danger: #dc3545; --light: #f8f9fa; --dark: #343a40; --breakpoint-xs: 0;
-        --breakpoint-sm: 576px; --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1200px;
-        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI" , Roboto, "Helvetica Neue" ,
-        Arial, "Noto Sans" , sans-serif, "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol" , "Noto Color Emoji"
-        ; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" , "Courier New" ,
-        monospace } *, ::after, ::before { box-sizing: border-box } html { font-family: sans-serif; line-height: 1.15;
+        Montserrat; src: url("./fonts/Montserrat-Medium.ttf"); font-weight: 500; font-display: swap; } :root { --blue:
+        #007bff; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red: #dc3545; --orange: #fd7e14; --yellow:
+        #ffc107; --green: #28a745; --teal: #20c997; --cyan: #17a2b8; --white: #fff; --gray: #6c757d; --gray-dark:
+        #343a40; --primary: #007bff; --secondary: #6c757d; --success: #28a745; --info: #17a2b8; --warning: #ffc107;
+        --danger: #dc3545; --light: #f8f9fa; --dark: #343a40; --breakpoint-xs: 0; --breakpoint-sm: 576px;
+        --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1200px; --font-family-sans-serif:
+        -apple-system, BlinkMacSystemFont, "Segoe UI" , Roboto, "Helvetica Neue" , Arial, "Noto Sans" ,
+        sans-serif, "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol" , "Noto Color Emoji" ;
+        --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono" , "Courier New" , monospace
+        } *, ::after, ::before { box-sizing: border-box } html { font-family: sans-serif; line-height: 1.15;
         -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent } article, aside, figcaption, figure,
         footer, header, hgroup, main, nav, section { display: block } body { margin: 0; font-family: -apple-system,
         BlinkMacSystemFont, "Segoe UI" , Roboto, "Helvetica Neue" , Arial, "Noto Sans" , sans-serif, "Apple Color Emoji"
@@ -173,6 +174,459 @@
         .my-3 {
             margin-bottom: 1rem !important
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            overflow-x: hidden;
+        }
+
+        body {
+            overflow-x: hidden;
+            font-family: "Montserrat", sans-serif, "Times New Roman", Times, serif;
+            color: #262626;
+        }
+
+        body h1,
+        body h2,
+        body h3 {
+            font-family: "butler-ultra-light", "Times New Roman", Times, serif;
+        }
+
+        body .btn-box {
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: unset;
+            transition: all 0.2s;
+        }
+
+        body .btn-box .massage-btn {
+            border: #AB6B4F 3px solid;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            letter-spacing: 8px;
+            transition: all 0.2s;
+        }
+
+        header {
+            background-color: #F9F5EC;
+        }
+
+        header#header-home {
+            position: relative;
+            height: 90vh;
+            height: 85vh;
+        }
+
+        @media (min-width: 576px) {
+            header#header-home {
+                height: 90vh;
+            }
+        }
+
+        header#header-home #header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 90vh;
+            width: 100%;
+            background-image: url("../media/header-mobile.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            opacity: 0.8;
+            z-index: 2;
+            height: 85vh;
+        }
+
+        @media (min-width: 768px) {
+            header#header-home #header-bg {
+                background-image: url("../media/header_min.webp");
+                background-position: center;
+            }
+        }
+
+        @media (min-width: 576px) {
+            header#header-home #header-bg {
+                height: 90vh;
+            }
+        }
+
+        header .center-flex {
+            position: relative;
+            transform: translateY(-8%);
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: #F9F5EC;
+            z-index: 3;
+        }
+
+        header .center-flex img {
+            width: 30%;
+        }
+
+        @media (min-width: 992px) {
+            header .center-flex img {
+                width: 12%;
+            }
+        }
+
+        header .center-flex h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            header .center-flex h1 {
+                font-size: 5rem;
+            }
+        }
+
+        header .center-flex .btn-box .massage-btn {
+            color: #F9F5EC;
+            background-color: #994d2d;
+            font-size: 0.8rem;
+        }
+
+        @media (min-width: 768px) {
+            header .center-flex .btn-box .massage-btn {
+                font-size: 1rem;
+            }
+        }
+
+        nav {
+            position: relative;
+            background: #F9F5EC;
+            min-height: 10vh;
+            z-index: 8;
+            min-height: 15vh;
+        }
+
+        @media (min-width: 576px) {
+            nav {
+                min-height: 10vh;
+            }
+        }
+
+        nav .menu-icon {
+            height: 5vh;
+            width: auto;
+        }
+
+        @media (max-width: 991.98px) {
+            nav .menu-icon {
+                height: 8vh;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            nav .menu-icon {
+                height: 6vh;
+            }
+        }
+
+        nav ul {
+            margin-left: auto;
+            font-family: "butler-ultra-light", "Times New Roman", Times, serif;
+        }
+
+        nav ul li {
+            padding: 0;
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: #262626;
+            padding: 0 1rem;
+        }
+
+        nav ul li:last-child {
+            border: #AB6B4F 3px solid;
+            border-radius: 3px;
+            font-family: "butler-light", "Times New Roman", Times, serif;
+        }
+
+        nav ul li:last-child div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            padding: 0 1rem;
+        }
+
+        .center-section {
+            padding-top: 200px;
+            background-color: #F9F5EC;
+            text-align: center;
+        }
+
+        .center-section h2 {
+            margin-bottom: 2rem;
+        }
+
+        .center-section p {
+            margin: 0 auto;
+            padding: 1rem;
+            width: 60%;
+        }
+
+        @media (max-width: 767.98px) {
+            .center-section p {
+                width: 90%;
+            }
+        }
+
+        .split-section {
+            position: relative;
+            background-color: #DBCFBF;
+        }
+
+        .split-section #space {
+            background-color: #F9F5EC;
+            height: 200px;
+            width: 100%;
+        }
+
+        .split-section .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .split-section .row .content {
+            position: static;
+            padding: 100px 5rem 100px 5rem;
+        }
+
+        @media (max-width: 767.98px) {
+            .split-section .row .content {
+                padding: 100px 0;
+                margin: auto;
+                width: 90%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            .split-section .row .content {
+                padding: 100px 0rem;
+            }
+        }
+
+        .split-section .row .content h2 {
+            margin-bottom: 2rem;
+        }
+
+        .split-section .row .content p {
+            margin-bottom: 3rem;
+        }
+
+        .split-section .row .content img {
+            position: absolute;
+            top: 170px;
+            right: 48%;
+            width: 110px;
+            height: 110px;
+            z-index: 3;
+        }
+
+        .split-section .row .contain {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .split-section .row .contain {
+                display: block;
+                background-image: url("../media/Lomi2.webp");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        #service {
+            padding-bottom: 100px;
+        }
+
+        #service .card {
+            background-color: transparent;
+            border: none;
+            margin-bottom: 3rem;
+        }
+
+        #service .card .card-img-top {
+            padding: 0 20%;
+            max-width: 420px;
+            height: auto;
+        }
+
+        #service .card h3 {
+            color: #AB6B4F;
+        }
+
+        #service .card p {
+            font-size: 1.2em;
+            width: 62%;
+        }
+
+        @media (max-width: 1199.98px) {
+            #service .card p {
+                font-size: 1em;
+                width: 75%;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            #service .card p {
+                width: 86%;
+                font-size: 0.8em;
+            }
+        }
+
+        #service a {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 991.98px) {
+            #service a {
+                width: fit-content;
+            }
+        }
+
+        #service a button {
+            width: 100%;
+        }
+
+        #about-henriette {
+            text-align: right;
+            background-color: #CECDAE;
+        }
+
+        #about-henriette .content {
+            padding: 200px 6rem 200px 3rem;
+        }
+
+        @media (max-width: 1199.98px) {
+            #about-henriette .content {
+                padding: 50px 3rem;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            #about-henriette .content {
+                padding: 1.5rem 3rem;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            #about-henriette .content {
+                padding: 100px 0;
+                margin: auto;
+                width: 90%;
+                text-align: center;
+            }
+        }
+
+        #about-henriette .content h3 {
+            margin-bottom: 2rem;
+        }
+
+        #about-henriette .content h4 {
+            font-family: "Montserrat";
+            color: #262626;
+            font-size: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 1199.98px) {
+            #about-henriette .content h4 {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 991.98px) {
+            #about-henriette .content h4 {
+                font-size: 0.8em;
+            }
+        }
+
+        #about-henriette .contain {
+            display: none;
+            opacity: 0.7;
+        }
+
+        @media (min-width: 768px) {
+            #about-henriette .contain {
+                display: block;
+                background-image: url("../media/jette-start.webp");
+                background-position: right;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+
+        #about-henriette button {
+            margin-left: auto;
+        }
+
+        footer {
+            padding: 50px 0;
+            background-color: #777657;
+        }
+
+        footer img {
+            padding: 6rem;
+        }
+
+        @media (max-width: 991.98px) {
+            footer img {
+                padding: 0 1rem;
+            }
+        }
+
+        footer .footing {
+            align-items: center;
+        }
+
+        footer .footer-content {
+            font-size: 1.2rem;
+            padding: 2rem;
+            padding-left: 5rem;
+            border-left: 1px solid #CECDAE;
+        }
+
+        @media (max-width: 991.98px) {
+            footer .footer-content {
+                border: none;
+                font-size: 1.1rem;
+            }
+        }
+
+        footer .footer-content a {
+            display: block;
+        }
+
+        footer .footer-content .internal-links {
+            display: block;
+            color: white;
+            text-decoration: unset;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
+
+        footer .footer-content .contact-details {
+            color: white;
+            text-decoration: unset;
+            margin: 0;
+        }
     </style>
 
     <!-- Bootstrap core CSS -->
@@ -182,8 +636,14 @@
         <link rel="stylesheet" href="./bootstrap-4.5.0/dist/css/bootstrap.min.css">
     </noscript>
     <!-- <link rel="stylesheet" href="./bootstrap-4.5.0/dist/css/bootstrap.min.css"> -->
+
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./css/style.css">
+    </noscript>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
 </head>
 
 <body>
