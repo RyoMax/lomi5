@@ -162,6 +162,9 @@ nav .menu-icon {
     height: 6vh;
   }
 }
+nav svg {
+  fill: #AB6B4F;
+}
 nav ul {
   margin-left: auto;
   font-family: "butler-ultra-light", "Times New Roman", Times, serif;
