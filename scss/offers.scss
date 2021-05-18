@@ -26,7 +26,7 @@
         //max-width: 546px;
         background-color: $white-bg;
         text-align: right;
-        color: $green;
+        color: $black-font;
         @include media-breakpoint-down(md){
             padding: 2rem;
         }
@@ -110,7 +110,7 @@
                     }
                     .massage-btn{
                         width: 100%;
-                        background-color: $red-orange;
+                        background-color: $red-button;
                         color: $white-bg;
                         &:hover, &:active{
                             background-color: $white-bg;
