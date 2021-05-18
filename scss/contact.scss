@@ -94,8 +94,15 @@
         } 
     }
     .contain{
-        background-image: url("../media/Lomi-Haus.webp");
-        background-position: right;
+        display: none;
+            @include media-breakpoint-up(sm){
+                display: block;
+                background-image: url("../media/Lomi-Haus.webp");
+                background-position: right;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        
     }
     iframe{
         width: 100%;

@@ -39,10 +39,14 @@
             }
         }
         .contain{
-            background-image: url("../media/Lomi2.webp");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            display: none;
+            @include media-breakpoint-up(sm){
+                display: block;
+                background-image: url("../media/Lomi2.webp");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
     }
 }

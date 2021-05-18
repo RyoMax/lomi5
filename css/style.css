@@ -255,10 +255,16 @@ nav ul li:last-child div:hover {
   z-index: 3;
 }
 .split-section .row .contain {
-  background-image: url("../media/Lomi2.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: none;
+}
+@media (min-width: 576px) {
+  .split-section .row .contain {
+    display: block;
+    background-image: url("../media/Lomi2.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 #service {
@@ -363,9 +369,17 @@ nav ul li:last-child div:hover {
   }
 }
 #about-henriette .contain {
-  background-image: url("../media/jette-start.webp");
-  background-position: right;
+  display: none;
   opacity: 0.7;
+}
+@media (min-width: 576px) {
+  #about-henriette .contain {
+    display: block;
+    background-image: url("../media/jette-start.webp");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 #about-henriette button {
   margin-left: auto;
@@ -399,8 +413,14 @@ nav ul li:last-child div:hover {
   /* &.col-12{
       display: none;
   } */
-  background: left/cover no-repeat url(../media/lomi-massage.webp);
-  opacity: 0.7;
+  display: none;
+}
+@media (min-width: 576px) {
+  #about #about-lomi .contain {
+    display: block;
+    background: left/cover no-repeat url(../media/lomi-massage.webp);
+    opacity: 0.7;
+  }
 }
 #about #about-lomi .content {
   background-color: #DBCFBF;
@@ -413,8 +433,14 @@ nav ul li:last-child div:hover {
   background-color: #CECDAE;
 }
 #about #more-about-henriette .contain {
-  background: center/cover no-repeat url(../media/jette-about.webp);
-  opacity: 0.8;
+  display: none;
+}
+@media (min-width: 576px) {
+  #about #more-about-henriette .contain {
+    display: block;
+    background: center/cover no-repeat url(../media/jette-about.webp);
+    opacity: 0.8;
+  }
 }
 
 .offers {
@@ -764,8 +790,16 @@ nav ul li:last-child div:hover {
   margin-left: auto;
 }
 #contact .contain {
-  background-image: url("../media/Lomi-Haus.webp");
-  background-position: right;
+  display: none;
+}
+@media (min-width: 576px) {
+  #contact .contain {
+    display: block;
+    background-image: url("../media/Lomi-Haus.webp");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 #contact iframe {
   width: 100%;

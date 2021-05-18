@@ -25,8 +25,14 @@
             /* &.col-12{
                 display: none;
             } */
-            background: left / cover no-repeat url(../media/lomi-massage.webp);
-            opacity: 0.7;
+            display: none;
+            @include media-breakpoint-up(sm){
+                display: block;
+                background: left / cover no-repeat url(../media/lomi-massage.webp);
+                opacity: 0.7;
+            }
+        
+            
         }
         .content{
             background-color: $brown-bright;
@@ -39,8 +45,12 @@
     #more-about-henriette{
         background-color: $green-bright;
         .contain{
-            background: center / cover no-repeat url(../media/jette-about.webp);
-            opacity: 0.8;
+            display: none;
+            @include media-breakpoint-up(sm){
+                display: block;
+                background: center / cover no-repeat url(../media/jette-about.webp);
+                opacity: 0.8;
+            }  
         }
     }
 }
