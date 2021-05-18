@@ -948,6 +948,7 @@ footer {
 }
 footer img {
   padding: 6rem;
+  aspect-ratio: 1/1;
 }
 @media (max-width: 991.98px) {
   footer img {

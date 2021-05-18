@@ -3,6 +3,7 @@ footer{
     background-color: $green;
     img{
         padding: 6rem;
+        aspect-ratio: 1 / 1;
          @include media-breakpoint-down(md){
              padding: 0 1rem;
          }
