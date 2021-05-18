@@ -10,6 +10,7 @@
         margin-left: 0;
         margin-right: 0;
         .content{
+            position: static;
             padding: $space 5rem $space 5rem;
             @include media-breakpoint-down(sm){
                 padding: $space 0;
@@ -30,7 +31,7 @@
                 position: absolute;
                 top: 170px;
                 right: 48%;
-                background-image: url("../media/Sonne_Icon.webp");
+                /* background-image: url("../media/Sonne_Icon.webp"); */
                 width: 110px;
                 height: 110px;
                 z-index: 3;
