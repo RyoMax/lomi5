@@ -15,16 +15,18 @@ header{
             left: 0;
             height: 90vh;
             width: 100%;
-            background-image: url("../media/header_min.webp");
+            background-image: url("../media/header-mobile.webp");
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: right;
             opacity: .8;
             z-index: 2;
             @include media-breakpoint-up(xs){
                 height: 85vh;
             }
             @include media-breakpoint-up(md){
-                background-image: url("../media/header-mobile.webp");
+                background-image: url("../media/header_min.webp");
+                background-position: center;
             }
             @include media-breakpoint-up(sm){
                 height: 90vh;
