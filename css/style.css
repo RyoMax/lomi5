@@ -9,10 +9,31 @@
 @font-face {
   font-family: butler-ultra-light;
   src: url("../fonts/Butler_Ultra_Light.otf");
+  font-display: swap;
 }
 @font-face {
   font-family: butler-light;
   src: url("../fonts/Butler_Light.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Medium.ttf");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 a:hover {
   color: #AB6B4F;
@@ -70,7 +91,7 @@ header#header-home #header-bg {
   left: 0;
   height: 90vh;
   width: 100%;
-  background-image: url("../media/header_min.jpg");
+  background-image: url("../media/header_min.webp");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
@@ -256,13 +277,13 @@ nav ul li:last-child div:hover {
   position: absolute;
   top: 170px;
   right: 48%;
-  background-image: url("../media/Sonne_Icon.png");
+  background-image: url("../media/Sonne_Icon.webp");
   width: 110px;
   height: 110px;
   z-index: 3;
 }
 .split-section .row .contain {
-  background-image: url("../media/Lomi2.jpg");
+  background-image: url("../media/Lomi2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -370,7 +391,7 @@ nav ul li:last-child div:hover {
   }
 }
 #about-henriette .contain {
-  background-image: url("../media/jette-start.jpg");
+  background-image: url("../media/jette-start.webp");
   background-position: right;
   opacity: 0.7;
 }
@@ -406,7 +427,7 @@ nav ul li:last-child div:hover {
   /* &.col-12{
       display: none;
   } */
-  background: left/cover no-repeat url(../media/lomi-massage_min.jpg);
+  background: left/cover no-repeat url(../media/lomi-massage.webp);
   opacity: 0.7;
 }
 #about #about-lomi .content {
@@ -420,7 +441,7 @@ nav ul li:last-child div:hover {
   background-color: #CECDAE;
 }
 #about #more-about-henriette .contain {
-  background: center/cover no-repeat url(../media/jette-about.jpg);
+  background: center/cover no-repeat url(../media/jette-about.webp);
   opacity: 0.8;
 }
 
@@ -771,7 +792,7 @@ nav ul li:last-child div:hover {
   margin-left: auto;
 }
 #contact .contain {
-  background-image: url("../media/Lomi-Haus.jpg");
+  background-image: url("../media/Lomi-Haus.webp");
   background-position: right;
 }
 #contact iframe {
