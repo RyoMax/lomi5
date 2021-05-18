@@ -62,7 +62,7 @@ header#header-home #header-bg {
   left: 0;
   height: 90vh;
   width: 100%;
-  background-image: url("../media/header-mobile.webp");
+  background-image: url("../media/header_mobile-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -72,7 +72,7 @@ header#header-home #header-bg {
 }
 @media (min-width: 768px) {
   header#header-home #header-bg {
-    background-image: url("../media/header_min.webp");
+    background-image: url("../media/header_min.jpg");
     background-position: center;
   }
 }
@@ -267,7 +267,7 @@ nav ul li:last-child div:hover {
 @media (min-width: 768px) {
   .split-section .row .contain {
     display: block;
-    background-image: url("../media/Lomi2.webp");
+    background-image: url("../media/Lomi2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -378,7 +378,7 @@ nav ul li:last-child div:hover {
 @media (min-width: 768px) {
   #about-henriette .contain {
     display: block;
-    background-image: url("../media/jette-start.webp");
+    background-image: url("../media/jette-start.jpg");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -421,7 +421,7 @@ nav ul li:last-child div:hover {
 @media (min-width: 768px) {
   #about #about-lomi .contain {
     display: block;
-    background: left/cover no-repeat url(../media/lomi-massage.webp);
+    background: left/cover no-repeat url(../media/lomi-massage.jpg);
     opacity: 0.7;
   }
 }
@@ -441,7 +441,7 @@ nav ul li:last-child div:hover {
 @media (min-width: 768px) {
   #about #more-about-henriette .contain {
     display: block;
-    background: center/cover no-repeat url(../media/jette-about.webp);
+    background: center/cover no-repeat url(../media/jette-about.jpg);
     opacity: 0.8;
   }
 }
@@ -798,7 +798,7 @@ nav ul li:last-child div:hover {
 @media (min-width: 768px) {
   #contact .contain {
     display: block;
-    background-image: url("../media/Lomi-Haus.webp");
+    background-image: url("../media/Lomi-Haus.jpg");
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
