@@ -44,6 +44,7 @@ body .btn-box .massage-btn:focus {
 }
 
 header {
+  position: relative;
   background-color: #F9F5EC;
 }
 header#header-home {
@@ -119,6 +120,15 @@ header .center-flex .btn-box .massage-btn {
   header .center-flex .btn-box .massage-btn {
     font-size: 1rem;
   }
+}
+
+#info-banner {
+  padding: 2rem;
+  background-color: #F9F5EC;
+}
+#info-banner p {
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 nav {
@@ -315,6 +325,8 @@ nav ul li:last-child div:hover {
 }
 @media (max-width: 991.98px) {
   #service a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -674,6 +686,8 @@ nav ul li:last-child div:hover {
 }
 .offers #for-questions .btn-box {
   margin-bottom: 2.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   transform: translateY(7px);
   width: 30%;
@@ -700,6 +714,8 @@ nav ul li:last-child div:hover {
 #contact {
   position: relative;
   background-color: #F9F5EC;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 #contact .icon-container {
@@ -776,6 +792,12 @@ nav ul li:last-child div:hover {
   background-color: inherit;
   margin-bottom: 1rem;
   border-color: #262626;
+}
+#contact .content form input:not(input[type=submit])::-moz-placeholder, #contact .content form textarea::-moz-placeholder {
+  font-style: italic;
+}
+#contact .content form input:not(input[type=submit]):-ms-input-placeholder, #contact .content form textarea:-ms-input-placeholder {
+  font-style: italic;
 }
 #contact .content form input:not(input[type=submit])::placeholder, #contact .content form textarea::placeholder {
   font-style: italic;
@@ -987,6 +1009,4 @@ footer .footer-content .contact-details {
   color: white;
   text-decoration: unset;
   margin: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

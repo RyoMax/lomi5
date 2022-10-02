@@ -1,4 +1,5 @@
 header{
+    position: relative;
     background-color: $white-bg;
     &#header-home{
         position: relative;
@@ -68,5 +69,13 @@ header{
             }
         }
         
+    }
+}
+#info-banner{
+    padding: 2rem;
+    background-color: $white-bg;
+    p{
+        text-align: center;
+        font-size: 1.4rem;
     }
 }
