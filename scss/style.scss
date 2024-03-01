@@ -21,7 +21,30 @@ body{
         margin-bottom: 1rem;
         box-shadow: unset;
         transition: all 0.2s;
-        &:hover, :active{
+        &:hover, :active{.btn-box{
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: unset;
+            transition: all 0.2s;
+            &:hover, :active{
+                box-shadow: 5px 5px 10px $black-font;
+            }
+            .massage-btn{
+                border: $red-orange 3px solid;
+                border-radius: 3px;
+                font-size: 0.9rem;
+                @include letterSpace();
+                transition: all 0.2s;
+                &:hover, :active{
+                    background-color: $red-orange;
+                    color: $white-bg;
+                    box-shadow: 5px 5px 10px $black-font;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
             box-shadow: 5px 5px 10px $black-font;
         }
         .massage-btn{
@@ -46,6 +69,7 @@ body{
 @import "center-section";
 @import "split-section";
 @import "service";
+@import "standorte";
 @import "about-henriette";
 @import "about";
 @import "offers";
